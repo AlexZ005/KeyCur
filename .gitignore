@@ -5,6 +5,9 @@
 bin/
 obj/
 data/
+[Dd]ebug/
+[Rr]elease/
+
 
 
 # Also Ignore auto generated files
