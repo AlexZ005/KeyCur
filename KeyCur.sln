@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyCur", "KeyCur\KeyCur.csproj", "{796111EC-1C59-477A-A317-35E554A135B9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "KeyCur Setup", "KeyCur Setup\KeyCur Setup.vdproj", "{D0DE5B1E-4A4B-4DB1-8212-9DF7B32C796A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyCur Loader", "KeyCur Loader\KeyCur Loader.csproj", "{6FD2423E-DC52-47D1-B577-47EC7CD87AC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{796111EC-1C59-477A-A317-35E554A135B9}.Debug|x86.ActiveCfg = Debug|x86
+		{796111EC-1C59-477A-A317-35E554A135B9}.Debug|x86.Build.0 = Debug|x86
+		{796111EC-1C59-477A-A317-35E554A135B9}.Release|x86.ActiveCfg = Release|x86
+		{796111EC-1C59-477A-A317-35E554A135B9}.Release|x86.Build.0 = Release|x86
+		{D0DE5B1E-4A4B-4DB1-8212-9DF7B32C796A}.Debug|x86.ActiveCfg = Debug
+		{D0DE5B1E-4A4B-4DB1-8212-9DF7B32C796A}.Release|x86.ActiveCfg = Release
+		{6FD2423E-DC52-47D1-B577-47EC7CD87AC3}.Debug|x86.ActiveCfg = Debug|x86
+		{6FD2423E-DC52-47D1-B577-47EC7CD87AC3}.Debug|x86.Build.0 = Debug|x86
+		{6FD2423E-DC52-47D1-B577-47EC7CD87AC3}.Release|x86.ActiveCfg = Release|x86
+		{6FD2423E-DC52-47D1-B577-47EC7CD87AC3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

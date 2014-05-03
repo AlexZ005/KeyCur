@@ -1,0 +1,15 @@
+
+# Ignore bin & obj directory
+################################
+
+bin/
+obj/
+data/
+
+
+# Also Ignore auto generated files
+################################
+
+*.suo
+*.user
+*.sln.docstates
