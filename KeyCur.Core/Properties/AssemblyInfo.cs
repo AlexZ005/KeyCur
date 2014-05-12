@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KeyCur")]
-[assembly: AssemblyDescription("KeyCur provide a way to control mouse pointer using configurable keyboard keys.")]
+[assembly: AssemblyTitle("KeyCur.Core")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Onuprova")]
-[assembly: AssemblyProduct("KeyCur")]
-[assembly: AssemblyCopyright("Copyright Onuprova ©  2014")]
-[assembly: AssemblyTrademark("Onuprova")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("KeyCur.Core")]
+[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c5af40ad-7e74-4569-9a97-0b949d0c4cd8")]
+[assembly: Guid("d0fdd0b2-bd20-4937-9af0-d091097fc60f")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.6.0")]
-[assembly: AssemblyFileVersion("1.0.6.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

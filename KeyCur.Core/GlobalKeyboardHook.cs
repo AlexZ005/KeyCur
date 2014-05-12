@@ -126,7 +126,7 @@ namespace KeyCur
             {
                 bool extended = (lParam.flags & LLKHF_EXTENDED) == LLKHF_EXTENDED;
 
-                Console.WriteLine(string.Format("Scan Code: {0} Virtual Key Code: {1}", lParam.scanCode, lParam.vkCode));
+                Console.WriteLine(string.Format("Scan Code: {0} Virtual Key Code: {1} Is Extended: {2} Flag: {3} Extra Info: {4}", lParam.scanCode, lParam.vkCode, extended.ToString(), lParam.flags, lParam.dwExtraInfo));
 
                 ExtendedKey key = new ExtendedKey((Keys)lParam.vkCode, extended, lParam.scanCode);
 

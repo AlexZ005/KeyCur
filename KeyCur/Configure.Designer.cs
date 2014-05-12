@@ -31,19 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configure));
             this.mouse_panel = new System.Windows.Forms.Panel();
-            this.down_right = new KeyCur.KeyInput();
-            this.down_left = new KeyCur.KeyInput();
-            this.up_left = new KeyCur.KeyInput();
-            this.up_right = new KeyCur.KeyInput();
-            this.mmb = new KeyCur.KeyInput();
-            this.down = new KeyCur.KeyInput();
-            this.right = new KeyCur.KeyInput();
-            this.left = new KeyCur.KeyInput();
-            this.up = new KeyCur.KeyInput();
-            this.wheel_down = new KeyCur.KeyInput();
-            this.wheel_up = new KeyCur.KeyInput();
-            this.rmb = new KeyCur.KeyInput();
-            this.lmb = new KeyCur.KeyInput();
             this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.trayMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.activateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,12 +56,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.double_click_delay = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.drag = new KeyCur.KeyInput();
             this.label3 = new System.Windows.Forms.Label();
-            this.double_click = new KeyCur.KeyInput();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.drag = new KeyCur.KeyInput();
+            this.double_click = new KeyCur.KeyInput();
             this.activation = new KeyCur.KeyInput();
+            this.down_right = new KeyCur.KeyInput();
+            this.down_left = new KeyCur.KeyInput();
+            this.up_left = new KeyCur.KeyInput();
+            this.up_right = new KeyCur.KeyInput();
+            this.mmb = new KeyCur.KeyInput();
+            this.down = new KeyCur.KeyInput();
+            this.right = new KeyCur.KeyInput();
+            this.left = new KeyCur.KeyInput();
+            this.up = new KeyCur.KeyInput();
+            this.wheel_down = new KeyCur.KeyInput();
+            this.wheel_up = new KeyCur.KeyInput();
+            this.rmb = new KeyCur.KeyInput();
+            this.lmb = new KeyCur.KeyInput();
             this.mouse_panel.SuspendLayout();
             this.trayMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -109,136 +109,6 @@
             this.mouse_panel.Size = new System.Drawing.Size(330, 510);
             this.mouse_panel.TabIndex = 2;
             this.mouse_panel.Click += new System.EventHandler(this.mouse_panel_Click);
-            // 
-            // down_right
-            // 
-            this.down_right.BackColor = System.Drawing.Color.Gray;
-            this.down_right.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.down_right.Location = new System.Drawing.Point(190, 361);
-            this.down_right.Name = "down_right";
-            this.down_right.Size = new System.Drawing.Size(53, 53);
-            this.down_right.TabIndex = 12;
-            this.down_right.ToolTip = "Move Mouse Down-Right";
-            // 
-            // down_left
-            // 
-            this.down_left.BackColor = System.Drawing.Color.Gray;
-            this.down_left.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.down_left.Location = new System.Drawing.Point(82, 361);
-            this.down_left.Name = "down_left";
-            this.down_left.Size = new System.Drawing.Size(53, 53);
-            this.down_left.TabIndex = 14;
-            this.down_left.ToolTip = "Move Mouse Down-Left";
-            // 
-            // up_left
-            // 
-            this.up_left.BackColor = System.Drawing.Color.Gray;
-            this.up_left.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.up_left.Location = new System.Drawing.Point(82, 253);
-            this.up_left.Name = "up_left";
-            this.up_left.Size = new System.Drawing.Size(53, 53);
-            this.up_left.TabIndex = 8;
-            this.up_left.ToolTip = "Move Mouse Up-Left";
-            // 
-            // up_right
-            // 
-            this.up_right.BackColor = System.Drawing.Color.Gray;
-            this.up_right.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.up_right.Location = new System.Drawing.Point(190, 253);
-            this.up_right.Name = "up_right";
-            this.up_right.Size = new System.Drawing.Size(53, 53);
-            this.up_right.TabIndex = 10;
-            this.up_right.ToolTip = "Move Mouse Up-Right";
-            // 
-            // mmb
-            // 
-            this.mmb.BackColor = System.Drawing.Color.Gray;
-            this.mmb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mmb.Location = new System.Drawing.Point(137, 53);
-            this.mmb.Name = "mmb";
-            this.mmb.Size = new System.Drawing.Size(53, 39);
-            this.mmb.TabIndex = 6;
-            this.mmb.ToolTip = "Middle Mouse Button";
-            // 
-            // down
-            // 
-            this.down.BackColor = System.Drawing.Color.Gray;
-            this.down.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.down.Location = new System.Drawing.Point(136, 361);
-            this.down.Name = "down";
-            this.down.Size = new System.Drawing.Size(53, 53);
-            this.down.TabIndex = 13;
-            this.down.ToolTip = "Move Mouse Down";
-            // 
-            // right
-            // 
-            this.right.BackColor = System.Drawing.Color.Gray;
-            this.right.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.right.Location = new System.Drawing.Point(190, 307);
-            this.right.Name = "right";
-            this.right.Size = new System.Drawing.Size(53, 53);
-            this.right.TabIndex = 11;
-            this.right.ToolTip = "Move Mouse Right";
-            // 
-            // left
-            // 
-            this.left.BackColor = System.Drawing.Color.Gray;
-            this.left.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.left.Location = new System.Drawing.Point(82, 307);
-            this.left.Name = "left";
-            this.left.Size = new System.Drawing.Size(53, 53);
-            this.left.TabIndex = 15;
-            this.left.ToolTip = "Move Mouse Left";
-            // 
-            // up
-            // 
-            this.up.BackColor = System.Drawing.Color.Gray;
-            this.up.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.up.Location = new System.Drawing.Point(136, 253);
-            this.up.Name = "up";
-            this.up.Size = new System.Drawing.Size(53, 53);
-            this.up.TabIndex = 9;
-            this.up.ToolTip = "Move Mouse Up";
-            // 
-            // wheel_down
-            // 
-            this.wheel_down.BackColor = System.Drawing.Color.Gray;
-            this.wheel_down.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.wheel_down.Location = new System.Drawing.Point(137, 98);
-            this.wheel_down.Name = "wheel_down";
-            this.wheel_down.Size = new System.Drawing.Size(53, 23);
-            this.wheel_down.TabIndex = 7;
-            this.wheel_down.ToolTip = "Wheel Backword";
-            // 
-            // wheel_up
-            // 
-            this.wheel_up.BackColor = System.Drawing.Color.Gray;
-            this.wheel_up.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.wheel_up.Location = new System.Drawing.Point(137, 24);
-            this.wheel_up.Name = "wheel_up";
-            this.wheel_up.Size = new System.Drawing.Size(53, 23);
-            this.wheel_up.TabIndex = 5;
-            this.wheel_up.ToolTip = "Wheel Forward";
-            // 
-            // rmb
-            // 
-            this.rmb.BackColor = System.Drawing.Color.Gray;
-            this.rmb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rmb.Location = new System.Drawing.Point(216, 53);
-            this.rmb.Name = "rmb";
-            this.rmb.Size = new System.Drawing.Size(73, 39);
-            this.rmb.TabIndex = 4;
-            this.rmb.ToolTip = "Right Mouse Button";
-            // 
-            // lmb
-            // 
-            this.lmb.BackColor = System.Drawing.Color.Gray;
-            this.lmb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lmb.Location = new System.Drawing.Point(38, 53);
-            this.lmb.Name = "lmb";
-            this.lmb.Size = new System.Drawing.Size(73, 39);
-            this.lmb.TabIndex = 3;
-            this.lmb.ToolTip = "Left Mouse Button";
             // 
             // trayIcon
             // 
@@ -298,7 +168,7 @@
             // 
             // timer
             // 
-            this.timer.Interval = 1;
+            this.timer.Interval = 3;
             // 
             // panel1
             // 
@@ -569,17 +439,6 @@
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Click += new System.EventHandler(this.Configure_Click);
             // 
-            // drag
-            // 
-            this.drag.BackColor = System.Drawing.Color.Gray;
-            this.drag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.drag.Location = new System.Drawing.Point(192, 84);
-            this.drag.Name = "drag";
-            this.drag.Size = new System.Drawing.Size(75, 23);
-            this.drag.TabIndex = 19;
-            this.drag.Text = "Start or Release Draging";
-            this.drag.ToolTip = "";
-            // 
             // label3
             // 
             this.label3.Location = new System.Drawing.Point(16, 84);
@@ -589,16 +448,6 @@
             this.label3.Text = "Drag Key:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Click += new System.EventHandler(this.Configure_Click);
-            // 
-            // double_click
-            // 
-            this.double_click.BackColor = System.Drawing.Color.Gray;
-            this.double_click.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.double_click.Location = new System.Drawing.Point(192, 56);
-            this.double_click.Name = "double_click";
-            this.double_click.Size = new System.Drawing.Size(75, 23);
-            this.double_click.TabIndex = 18;
-            this.double_click.ToolTip = "Do a double click";
             // 
             // label2
             // 
@@ -620,6 +469,27 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Click += new System.EventHandler(this.Configure_Click);
             // 
+            // drag
+            // 
+            this.drag.BackColor = System.Drawing.Color.Gray;
+            this.drag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.drag.Location = new System.Drawing.Point(192, 84);
+            this.drag.Name = "drag";
+            this.drag.Size = new System.Drawing.Size(75, 23);
+            this.drag.TabIndex = 19;
+            this.drag.Text = "Start or Release Draging";
+            this.drag.ToolTip = "";
+            // 
+            // double_click
+            // 
+            this.double_click.BackColor = System.Drawing.Color.Gray;
+            this.double_click.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.double_click.Location = new System.Drawing.Point(192, 56);
+            this.double_click.Name = "double_click";
+            this.double_click.Size = new System.Drawing.Size(75, 23);
+            this.double_click.TabIndex = 18;
+            this.double_click.ToolTip = "Do a double click";
+            // 
             // activation
             // 
             this.activation.BackColor = System.Drawing.Color.Gray;
@@ -629,6 +499,136 @@
             this.activation.Size = new System.Drawing.Size(75, 23);
             this.activation.TabIndex = 17;
             this.activation.ToolTip = "Start/Stop KeyCur";
+            // 
+            // down_right
+            // 
+            this.down_right.BackColor = System.Drawing.Color.Gray;
+            this.down_right.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.down_right.Location = new System.Drawing.Point(190, 361);
+            this.down_right.Name = "down_right";
+            this.down_right.Size = new System.Drawing.Size(53, 53);
+            this.down_right.TabIndex = 12;
+            this.down_right.ToolTip = "Move Mouse Down-Right";
+            // 
+            // down_left
+            // 
+            this.down_left.BackColor = System.Drawing.Color.Gray;
+            this.down_left.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.down_left.Location = new System.Drawing.Point(82, 361);
+            this.down_left.Name = "down_left";
+            this.down_left.Size = new System.Drawing.Size(53, 53);
+            this.down_left.TabIndex = 14;
+            this.down_left.ToolTip = "Move Mouse Down-Left";
+            // 
+            // up_left
+            // 
+            this.up_left.BackColor = System.Drawing.Color.Gray;
+            this.up_left.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.up_left.Location = new System.Drawing.Point(82, 253);
+            this.up_left.Name = "up_left";
+            this.up_left.Size = new System.Drawing.Size(53, 53);
+            this.up_left.TabIndex = 8;
+            this.up_left.ToolTip = "Move Mouse Up-Left";
+            // 
+            // up_right
+            // 
+            this.up_right.BackColor = System.Drawing.Color.Gray;
+            this.up_right.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.up_right.Location = new System.Drawing.Point(190, 253);
+            this.up_right.Name = "up_right";
+            this.up_right.Size = new System.Drawing.Size(53, 53);
+            this.up_right.TabIndex = 10;
+            this.up_right.ToolTip = "Move Mouse Up-Right";
+            // 
+            // mmb
+            // 
+            this.mmb.BackColor = System.Drawing.Color.Gray;
+            this.mmb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mmb.Location = new System.Drawing.Point(137, 53);
+            this.mmb.Name = "mmb";
+            this.mmb.Size = new System.Drawing.Size(53, 39);
+            this.mmb.TabIndex = 6;
+            this.mmb.ToolTip = "Middle Mouse Button";
+            // 
+            // down
+            // 
+            this.down.BackColor = System.Drawing.Color.Gray;
+            this.down.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.down.Location = new System.Drawing.Point(136, 361);
+            this.down.Name = "down";
+            this.down.Size = new System.Drawing.Size(53, 53);
+            this.down.TabIndex = 13;
+            this.down.ToolTip = "Move Mouse Down";
+            // 
+            // right
+            // 
+            this.right.BackColor = System.Drawing.Color.Gray;
+            this.right.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.right.Location = new System.Drawing.Point(190, 307);
+            this.right.Name = "right";
+            this.right.Size = new System.Drawing.Size(53, 53);
+            this.right.TabIndex = 11;
+            this.right.ToolTip = "Move Mouse Right";
+            // 
+            // left
+            // 
+            this.left.BackColor = System.Drawing.Color.Gray;
+            this.left.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.left.Location = new System.Drawing.Point(82, 307);
+            this.left.Name = "left";
+            this.left.Size = new System.Drawing.Size(53, 53);
+            this.left.TabIndex = 15;
+            this.left.ToolTip = "Move Mouse Left";
+            // 
+            // up
+            // 
+            this.up.BackColor = System.Drawing.Color.Gray;
+            this.up.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.up.Location = new System.Drawing.Point(136, 253);
+            this.up.Name = "up";
+            this.up.Size = new System.Drawing.Size(53, 53);
+            this.up.TabIndex = 9;
+            this.up.ToolTip = "Move Mouse Up";
+            // 
+            // wheel_down
+            // 
+            this.wheel_down.BackColor = System.Drawing.Color.Gray;
+            this.wheel_down.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wheel_down.Location = new System.Drawing.Point(137, 98);
+            this.wheel_down.Name = "wheel_down";
+            this.wheel_down.Size = new System.Drawing.Size(53, 23);
+            this.wheel_down.TabIndex = 7;
+            this.wheel_down.ToolTip = "Wheel Backword";
+            // 
+            // wheel_up
+            // 
+            this.wheel_up.BackColor = System.Drawing.Color.Gray;
+            this.wheel_up.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wheel_up.Location = new System.Drawing.Point(137, 24);
+            this.wheel_up.Name = "wheel_up";
+            this.wheel_up.Size = new System.Drawing.Size(53, 23);
+            this.wheel_up.TabIndex = 5;
+            this.wheel_up.ToolTip = "Wheel Forward";
+            // 
+            // rmb
+            // 
+            this.rmb.BackColor = System.Drawing.Color.Gray;
+            this.rmb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rmb.Location = new System.Drawing.Point(216, 53);
+            this.rmb.Name = "rmb";
+            this.rmb.Size = new System.Drawing.Size(73, 39);
+            this.rmb.TabIndex = 4;
+            this.rmb.ToolTip = "Right Mouse Button";
+            // 
+            // lmb
+            // 
+            this.lmb.BackColor = System.Drawing.Color.Gray;
+            this.lmb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lmb.Location = new System.Drawing.Point(38, 53);
+            this.lmb.Name = "lmb";
+            this.lmb.Size = new System.Drawing.Size(73, 39);
+            this.lmb.TabIndex = 3;
+            this.lmb.ToolTip = "Left Mouse Button";
             // 
             // Configure
             // 

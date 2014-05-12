@@ -21,8 +21,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_DBF7B9D9DBBCB220CF918B3098793D3A"
+        "OwnerKey" = "8:_7B79A57475E4424D9F3E88E2265A17D4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7B79A57475E4424D9F3E88E2265A17D4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_DBF7B9D9DBBCB220CF918B3098793D3A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -130,6 +142,37 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DBF7B9D9DBBCB220CF918B3098793D3A"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:KeyCur.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_DBF7B9D9DBBCB220CF918B3098793D3A"
+                    {
+                    "Name" = "8:KeyCur.Core.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:KeyCur.Core.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_E60907C512DB48029392325009D41F0B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -197,15 +240,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:KeyCur"
-        "ProductCode" = "8:{91B7C362-C1A9-4A83-944D-CBEE3283F1C6}"
-        "PackageCode" = "8:{5DCE3A9C-3DF0-4B1F-ABA7-C29D3172D1B1}"
+        "ProductCode" = "8:{1FEB4D50-0200-49C2-9304-53EF50CD2892}"
+        "PackageCode" = "8:{5B78F5A4-71B7-4A1A-BF65-FEA6034C3D55}"
         "UpgradeCode" = "8:{F219BD7F-F172-410E-9AE7-84E3CD9742F9}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.5"
+        "ProductVersion" = "8:1.0.6"
         "Manufacturer" = "8:Onuprova"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -775,7 +818,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7B79A57475E4424D9F3E88E2265A17D4"
             {
-            "SourcePath" = "8:..\\KeyCur\\obj\\x86\\Release\\KeyCur.exe"
+            "SourcePath" = "8:..\\KeyCur\\obj\\x86\\Debug\\KeyCur.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_E60907C512DB48029392325009D41F0B"

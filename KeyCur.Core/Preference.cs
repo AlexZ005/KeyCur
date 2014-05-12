@@ -108,7 +108,7 @@ namespace KeyCur
             ClickSpeed = 50;
             DoubleClickDelay = 100;
             MovementAcceleration = 1;
-            MaxSpeed = 30;
+            MaxSpeed = 10;
             WheelAcceleration = 1;
             MaxWheelSpeed = 100;
         }

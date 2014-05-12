@@ -21,7 +21,7 @@ namespace KeyCur
 
             string path = Path.Combine(dir, "preference2.json");
 
-            System.Windows.Forms.MessageBox.Show(path);
+            //System.Windows.Forms.MessageBox.Show(path);
 
             Preference = Preference.Load(path);
         }

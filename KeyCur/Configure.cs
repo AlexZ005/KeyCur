@@ -142,7 +142,6 @@ namespace KeyCur
             wheel_acceleration.Value = Exchange.Preference.WheelAcceleration;
             max_wheel_speed.Value = Exchange.Preference.MaxWheelSpeed;
 
-            RunOnStartUp.Checked = IsStartUp();
             ballon_alert.Checked = Exchange.Preference.ShowBallonAlert;
             sound_alert.Checked = Exchange.Preference.PlaySoundAlert;
 

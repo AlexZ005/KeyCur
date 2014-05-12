@@ -52,7 +52,7 @@ namespace KeyCur
             if ((ex1 as object) == null && (ex2 as object) == null) return true;
             if ((ex1 as object) == null && (ex2 as object)  != null) return false;
             if ((ex1 as object)  != null && (ex2 as object)  == null) return false;
-            return ex1.ScanCode == ex2.ScanCode;
+            return ex1.ScanCode == ex2.ScanCode && ex1.IsExtended == ex2.IsExtended;
         }
 
         public static bool operator !=(ExtendedKey ex1, ExtendedKey ex2)
