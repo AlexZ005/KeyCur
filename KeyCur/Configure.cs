@@ -8,11 +8,28 @@ using System.Text;
 using System.Media;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using System.Runtime.InteropServices;
 
 namespace KeyCur
 {
     public partial class Configure : Form
     {
+        [DllImport("kernel32.dll")]
+        static extern uint GetLastError();
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern IntPtr LoadCursorFromFile(string lpFileName);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern bool SetSystemCursor(IntPtr hcur, uint id);
+
+        private const uint OCR_NORMAL = 32512; // Standard Arrow Cursor ID
+
+        private static string cursorActiveString = @"C:\Windows\Cursors\aero_link.cur";
+        private static string cursorInactiveString = @"C:\Windows\Cursors\aero_ew.cur";
+        IntPtr cursorActive = LoadCursorFromFile(cursorActiveString);
+        IntPtr cursorInactive = LoadCursorFromFile(cursorInactiveString);
+
+
         GlobalKeyboardHook gkh = new GlobalKeyboardHook();
         MouseSimulator msim = new MouseSimulator();
 
@@ -215,6 +232,15 @@ namespace KeyCur
             if (Simulate)
             {
                 start_button.Text = "Stop (" + Exchange.Preference.Activation.ToString() + ")";
+                //this.Cursor = Cursors.WaitCursor;
+                if (cursorActive != IntPtr.Zero && SetSystemCursor(LoadCursorFromFile(@"C:\Windows\Cursors\aero_helpsel.cur"), OCR_NORMAL))
+                { 
+                }
+                else
+                {
+                    uint test = GetLastError();
+                    if (Exchange.Preference.ShowBallonAlert) trayIcon.ShowBalloonTip(1000, "Cannot Activate Icon", test.ToString(), ToolTipIcon.Info); // Handle error in setting the custom cursor
+                }
                 trayIcon.Icon = Properties.Resources.mouse1;
                 trayIcon.Text = "KeyCur is Enabled";
                 if (Exchange.Preference.ShowBallonAlert) trayIcon.ShowBalloonTip(1000, "Activated", "KeyCur has been activated", ToolTipIcon.Info);
@@ -232,6 +258,15 @@ namespace KeyCur
             else
             {
                 start_button.Text = "Start (" + Exchange.Preference.Activation.ToString() + ")";
+                //this.Cursor = Cursors.Default;
+                if (cursorInactive != IntPtr.Zero && SetSystemCursor(LoadCursorFromFile(@"C:\Windows\Cursors\aero_arrow.cur"), OCR_NORMAL))
+                {
+                }
+                else
+                {
+                    uint test2 = GetLastError();
+                    if (Exchange.Preference.ShowBallonAlert) trayIcon.ShowBalloonTip(1000, "Cannot Deactivate Icon", test2.ToString(), ToolTipIcon.Info); // Handle error in setting the custom cursor
+                }
                 trayIcon.Icon = Properties.Resources.mouse_inactive;
                 trayIcon.Text = "KeyCur is Disabled";
                 if (Exchange.Preference.ShowBallonAlert) trayIcon.ShowBalloonTip(1000, "Deactivated", "KeyCur has been deactivated", ToolTipIcon.Info);
