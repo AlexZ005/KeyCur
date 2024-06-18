@@ -9,6 +9,9 @@ using System.Media;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Security.Policy;
 
 namespace KeyCur
 {
@@ -23,6 +26,7 @@ namespace KeyCur
         private static extern bool SetSystemCursor(IntPtr hcur, uint id);
 
         private const uint OCR_NORMAL = 32512; // Standard Arrow Cursor ID
+        private const uint OCR_IBEAM = 32513; // Text select Cursor ID
 
         private static string cursorActiveString = @"C:\Windows\Cursors\aero_link.cur";
         private static string cursorInactiveString = @"C:\Windows\Cursors\aero_ew.cur";
@@ -228,13 +232,18 @@ namespace KeyCur
         private void GKH_GlobalKeyPress(object sender, EventArgs e)
         {
             Simulate = !Simulate;
-
             if (Simulate)
             {
                 start_button.Text = "Stop (" + Exchange.Preference.Activation.ToString() + ")";
                 //this.Cursor = Cursors.WaitCursor;
                 if (cursorActive != IntPtr.Zero && SetSystemCursor(LoadCursorFromFile(@"C:\Windows\Cursors\aero_helpsel.cur"), OCR_NORMAL))
-                { 
+                {
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Users\white\AppData\Local\Microsoft\Windows\Cursors\ibeam_eoa.cur"), 32513);
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Users\white\AppData\Local\Microsoft\Windows\Cursors\busy_eoa.cur"), 32650); //AppStarting 
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Users\white\AppData\Local\Microsoft\Windows\Cursors\arrow_eoa.cur"), 32512); //Arrow
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Users\white\AppData\Local\Microsoft\Windows\Cursors\link_eoa.cur"), 32649); //Hand
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Users\white\AppData\Local\Microsoft\Windows\Cursors\unavail_eoa.cur"), 32648); //No
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Users\white\AppData\Local\Microsoft\Windows\Cursors\wait_eoa.cur"), 32514); //Wait
                 }
                 else
                 {
@@ -261,6 +270,12 @@ namespace KeyCur
                 //this.Cursor = Cursors.Default;
                 if (cursorInactive != IntPtr.Zero && SetSystemCursor(LoadCursorFromFile(@"C:\Windows\Cursors\aero_arrow.cur"), OCR_NORMAL))
                 {
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Windows\cursors\beam_i.cur"), 32513);
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Windows\cursors\aero_working.ani"), 32650); //AppStarting 
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Windows\cursors\aero_arrow.cur"), 32512); //Arrow
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Windows\cursors\aero_link.cur"), 32649); //Hand
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Windows\cursors\aero_unavail.cur"), 32648); //No
+                    SetSystemCursor(LoadCursorFromFile(@"C:\Windows\cursors\aero_busy.ani"), 32514); //Wait
                 }
                 else
                 {
